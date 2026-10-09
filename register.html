@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="media.html">Media</a>
+        <a href="register.html">Register</a>
+    </nav>
+
+    <form action="#" method="post">
+        <h1>Register</h1>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required minlength="3" maxlength="30" placeholder="Full name">
+
+        <label for="pw">Password</label>
+        <input type="password" id="pw" name="pw" required minlength="8" maxlength="20">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="dob">Date of birth</label>
+        <input type="date" id="dob" name="dob" min="1950-01-01" max="2015-12-31">
+
+        <label for="site">Website</label>
+        <input type="url" id="site" name="site" placeholder="https://example.com">
+
+        <label for="color">Favourite colour</label>
+        <input type="color" id="color" name="color" value="#1f3a68">
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" min="10" max="100" value="20">
+
+        <label for="time">Preferred time</label>
+        <input type="time" id="time" name="time">
+
+        <label for="range">Skill level</label>
+        <input type="range" id="range" name="range" min="0" max="10" value="5">
+
+        <label for="id">Student ID (read only)</label>
+        <input type="text" id="id" name="id" value="STU-001" readonly>
+
+        <label for="lock">Locked field</label>
+        <input type="text" id="lock" name="lock" value="Not editable" disabled>
+
+        <label for="bio">About you</label>
+        <textarea id="bio" name="bio" rows="4" maxlength="200"></textarea>
+
+        <label for="course">Course</label>
+        <select id="course" name="course">
+            <option value="web">Web Engineering</option>
+            <option value="ai" selected>Artificial Intelligence</option>
+            <option value="db">Databases</option>
+        </select>
+
+        <label for="file">Upload CV</label>
+        <input type="file" id="file" name="file">
+
+        <fieldset>
+            <legend>Gender</legend>
+            <label><input type="radio" name="gender" value="m" checked> Male</label>
+            <label><input type="radio" name="gender" value="f"> Female</label>
+        </fieldset>
+
+        <label class="check"><input type="checkbox" name="terms" required checked> I accept the terms</label>
+
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>

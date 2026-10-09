@@ -1,0 +1,61 @@
+body { font-family: Verdana, sans-serif; background: #f4f6fb; margin: 0; padding: 16px; }
+nav { text-align: center; margin-bottom: 16px; }
+nav a { margin: 0 8px; color: #1f3a68; }
+nav a:hover { color: #f2b705; }                       /* pseudo-class */
+
+form {
+    display: grid;                                    /* grid layout */
+    grid-template-columns: 1fr 2fr;
+    gap: 12px 16px;
+    max-width: 640px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 24px;
+    border: 2px solid #1f3a68;
+    border-radius: 8px;
+}
+form h1, fieldset, button, .check { grid-column: 1 / -1; }
+form > label { align-self: center; }
+
+/* attribute selectors */
+input[type="text"], input[type="password"], input[type="email"],
+input[type="url"], input[type="date"], input[type="number"],
+input[type="time"], textarea, select {
+    padding: 6px;
+    border: 2px solid #aab;
+    border-radius: 4px;
+}
+input[readonly] { background: #eef; }
+input[disabled] { background: #ddd; color: #777; }
+input[type="file"] { font-size: 0.9rem; }
+
+/* pseudo-classes */
+input:focus, textarea:focus, select:focus { outline: none; border-color: #f2b705; background: #fffbe6; }
+input:valid:not(:placeholder-shown) { border-color: green; }
+input:invalid { border-color: crimson; }
+input[type="checkbox"]:checked + span, input:checked { accent-color: #1f3a68; }
+
+/* combinators */
+form > label { font-weight: bold; }                   /* child */
+label + input, label + select { width: 100%; }        /* adjacent sibling */
+fieldset label { margin-right: 16px; font-weight: normal; }  /* descendant */
+h1 ~ label:first-of-type { margin-top: 4px; }        /* general sibling */
+
+/* pseudo-elements */
+form h1::before { content: "\270E  "; }
+label::after { content: ":"; }
+fieldset label::after, .check::after { content: ""; }
+textarea::placeholder, input::placeholder { color: #999; }
+input[type="range"]::-webkit-slider-thumb { background: #1f3a68; }
+
+button {
+    padding: 10px;
+    background: #1f3a68;
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover { background: #f2b705; color: #000; }
+
+@media (max-width: 500px) { form { grid-template-columns: 1fr; } }

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media and Info</title>
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="media.html">Media</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <aside class="sidebar">
+            <h2>Topics</h2>
+            <h3>Ordered list</h3>
+            <ol>
+                <li>Write HTML</li>
+                <li>Style with CSS</li>
+                <li>Test in browser</li>
+            </ol>
+            <h3>Unordered list</h3>
+            <ul>
+                <li>Images</li>
+                <li>Audio</li>
+                <li>Video</li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <h1>Media and Info</h1>
+
+            <figure class="pic">
+                <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='180'%3E%3Crect width='300' height='180' fill='%231f3a68'/%3E%3Ccircle cx='150' cy='90' r='50' fill='%23f2b705'/%3E%3C/svg%3E" alt="Sample graphic" width="300" height="180">
+                <figcaption>An image floated left</figcaption>
+            </figure>
+
+            <p>Text wraps around the floated image. This page uses the box model, background image, display, position and float. Video and audio are shown below.</p>
+
+            <h2>Video</h2>
+            <video controls width="400">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+
+            <h2>Audio</h2>
+            <audio controls>
+                <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+                Your browser does not support audio.
+            </audio>
+
+            <h2>Data table</h2>
+            <div class="scroll">
+                <table>
+                    <caption>Language popularity</caption>
+                    <thead>
+                        <tr><th>Language</th><th>Used for</th><th>Year</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>HTML</td><td>Structure</td><td>1993</td></tr>
+                        <tr><td>CSS</td><td>Style</td><td>1996</td></tr>
+                        <tr><td>JavaScript</td><td>Behaviour</td><td>1995</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <footer>&copy; 2025 all rights reserved</footer>
+</body>
+</html>

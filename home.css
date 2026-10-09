@@ -1,0 +1,36 @@
+/* element selectors */
+body {
+    font-family: Georgia, serif;
+    background-color: #f4f6fb;
+    color: #222;
+    margin: 0;
+    line-height: 1.6;
+}
+header {
+    background-color: #1f3a68;
+    color: #fff;
+    padding: 12px 24px;
+    border-bottom: 4px solid #f2b705;
+}
+header nav { float: right; }
+header a { color: #fff; text-decoration: none; }
+header a:hover { text-decoration: underline; }
+main { max-width: 800px; margin: 0 auto; padding: 24px; }
+h1 { font-size: 2.4rem; color: #1f3a68; text-align: center; }
+h2 { font-weight: normal; text-align: center; letter-spacing: 2px; }
+h3 { margin-top: 0; }
+footer { text-align: center; padding: 16px; border-top: 1px solid #ccc; }
+
+/* class selectors */
+.brand { font-size: 1.2rem; margin-left: 8px; }
+.lead { font-size: 1.2rem; font-style: italic; }
+.card {
+    background-color: #fff;
+    border: 2px solid #1f3a68;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 20px 0;
+}
+
+/* id selector */
+#current { font-weight: bold; color: #f2b705; }
